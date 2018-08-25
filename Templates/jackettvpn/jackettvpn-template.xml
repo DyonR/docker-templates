@@ -6,16 +6,15 @@
   <Repository>dyonr/jackettvpn</Repository>
   <Registry>https://hub.docker.com/r/dyonr/jackettvpn</Registry>
   <Network>bridge</Network>
-  <MyIP></MyIP>
+  <MyIP/>
   <Privileged>true</Privileged>
   <Support>https://lime-technology.com/forums/topic/73693-support-jackettvpn/</Support>
-  <Project/>
   <Overview>Docker container which runs the latest headless Jackett Server while connecting to OpenVPN with iptables killswitch to prevent IP leakage when the tunnel goes down.</Overview>
   <Category>Downloaders: Tools:</Category>
   <WebUI>http://[IP]:[PORT:9117]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/DyonR/docker-templates/master/Templates/jackettvpn/jackettvpn-template.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/DyonR/docker-templates/master/Icons/jackettvpn/jackettvpn-icon.png</Icon>>
-  <ExtraParams></ExtraParams>
+  <Icon>https://raw.githubusercontent.com/DyonR/docker-templates/master/Icons/jackettvpn/jackettvpn-icon.png</Icon>
+  <ExtraParams/>
   <PostArgs/>
   <DateInstalled></DateInstalled>
   <DonateText/>
@@ -40,12 +39,17 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/jackettvpn/</HostDir>
+      <HostDir>/mnt/user/appdata/jackettvpn</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment>
+    <Variable>
+      <Value>9117</Value>
+      <Name>WEBUI_PORT</Name>
+      <Mode/>
+    </Variable>
     <Variable>
       <Value>yes</Value>
       <Name>VPN_ENABLED</Name>
@@ -79,11 +83,6 @@
     <Variable>
       <Value>100</Value>
       <Name>PGID</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>9117</Value>
-      <Name>WEBUI_PORT</Name>
       <Mode/>
     </Variable>
   </Environment>
