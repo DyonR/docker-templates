@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
-<Container version="0">
+<Container version="1">
+  <Date>2018-08-25</Date>
   <Name>jackettvpn</Name>
+  <Project>https://github.com/Jackett/Jackett</Project>
   <Repository>dyonr/jackettvpn</Repository>
   <Registry>https://hub.docker.com/r/dyonr/jackettvpn</Registry>
   <Network>bridge</Network>
