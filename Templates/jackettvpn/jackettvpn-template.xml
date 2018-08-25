@@ -87,6 +87,7 @@
       <Mode/>
     </Variable>
   </Environment>
+  <Labels/>
   <Config Name="WEBUI_PORT" Target="9117" Default="9117" Mode="tcp" Description="Container Port: 9117" Type="Port" Display="always" Required="true" Mask="false">9117</Config>
   <Config Name="VPN_ENABLED" Target="VPN_ENABLED" Default="yes" Mode="" Description="Container Variable: VPN_ENABLED" Type="Variable" Display="always" Required="false" Mask="false">yes</Config>
   <Config Name="VPN_USERNAME" Target="VPN_USERNAME" Default="" Mode="" Description="Container Variable: VPN_USERNAME" Type="Variable" Display="always" Required="false" Mask="false">2ev4gtibdq1bduihhgfjjl38</Config>
