@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP></MyIP>
   <Privileged>true</Privileged>
-  <Support></Support>
+  <Support>https://lime-technology.com/forums/topic/73693-support-jackettvpn/</Support>
   <Project/>
   <Overview>Docker container which runs the latest headless Jackett Server while connecting to OpenVPN with iptables killswitch to prevent IP leakage when the tunnel goes down.</Overview>
   <Category>Downloaders: Tools:</Category>
