@@ -78,16 +78,22 @@
       <Name>PGID</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>002</Value>
+      <Name>UMASK</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="WEBUI_PORT" Target="9117" Default="9117" Mode="tcp" Description="Container Port: 9117" Type="Port" Display="always" Required="true" Mask="false">9117</Config>
   <Config Name="VPN_ENABLED" Target="VPN_ENABLED" Default="yes" Mode="" Description="Container Variable: VPN_ENABLED" Type="Variable" Display="always" Required="false" Mask="false">yes</Config>
   <Config Name="VPN_USERNAME" Target="VPN_USERNAME" Default="" Mode="" Description="Container Variable: VPN_USERNAME" Type="Variable" Display="always" Required="false" Mask="false">2ev4gtibdq1bduihhgfjjl38</Config>
-  <Config Name="VPN_PASSWORD" Target="VPN_PASSWORD" Default="" Mode="" Description="Container Variable: VPN_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">1sam81hz17lymwenxayhvl5c</Config>
+  <Config Name="VPN_PASSWORD" Target="VPN_PASSWORD" Default="" Mode="" Description="Container Variable: VPN_PASSWORD" Type="Variable" Display="always" Required="false" Mask="true">1sam81hz17lymwenxayhvl5c</Config>
   <Config Name="LAN_NETWORK" Target="LAN_NETWORK" Default="192.168.0.0/24" Mode="" Description="Container Variable: LAN_NETWORK" Type="Variable" Display="always" Required="true" Mask="false">192.168.0.0/24</Config>
-  <Config Name="NAME_SERVERS" Target="NAME_SERVERS" Default="1.1.1.1,1.0.0.1" Mode="" Description="Container Variable: NAME_SERVERS" Type="Variable" Display="always" Required="true" Mask="false">1.1.1.1,1.0.0.1</Config>
+  <Config Name="NAME_SERVERS" Target="NAME_SERVERS" Default="1.1.1.1,1.0.0.1" Mode="" Description="Container Variable: NAME_SERVERS" Type="Variable" Display="always" Required="false" Mask="false">1.1.1.1,1.0.0.1</Config>
   <Config Name="Blackhole Path" Target="/blackhole" Default="" Mode="rw" Description="Container Path: /blackhole" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Downloads/Jackett/</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">002</Config>
   <Config Name="config" Target="/config" Default="/mnt/user/appdata/jackettvpn" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/jackettvpn/</Config>
 </Container>
