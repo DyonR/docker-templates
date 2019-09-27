@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<Container version="2">
-  <Date>2018-08-25</Date>
+<Container version="3">
+  <Date>2019-09-28</Date>
   <Name>jackettvpn</Name>
   <Repository>dyonr/jackettvpn</Repository>
   <Registry>https://hub.docker.com/r/dyonr/jackettvpn</Registry>
