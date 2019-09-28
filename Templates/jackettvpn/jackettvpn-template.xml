@@ -91,7 +91,7 @@
   <Config Name="VPN_PASSWORD" Target="VPN_PASSWORD" Default="" Mode="" Description="Container Variable: VPN_PASSWORD" Type="Variable" Display="always" Required="false" Mask="true">1sam81hz17lymwenxayhvl5c</Config>
   <Config Name="LAN_NETWORK" Target="LAN_NETWORK" Default="192.168.0.0/24" Mode="" Description="Container Variable: LAN_NETWORK" Type="Variable" Display="always" Required="true" Mask="false">192.168.0.0/24</Config>
   <Config Name="NAME_SERVERS" Target="NAME_SERVERS" Default="1.1.1.1,1.0.0.1" Mode="" Description="Container Variable: NAME_SERVERS" Type="Variable" Display="always" Required="false" Mask="false">1.1.1.1,1.0.0.1</Config>
-  <Config Name="Blackhole Path" Target="/blackhole" Default="" Mode="rw" Description="Container Path: /blackhole" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/data/Jackett/</Config>
+  <Config Name="Blackhole Path" Target="/blackhole" Default="" Mode="rw" Description="Container Path: /blackhole" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">002</Config>
