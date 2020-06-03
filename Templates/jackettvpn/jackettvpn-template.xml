@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<Container version="5">
-  <Date>2019-09-28</Date>
+<Container version="6">
+  <Date>2020-06-03</Date>
   <Name>jackettvpn</Name>
   <Repository>dyonr/jackettvpn</Repository>
   <Registry>https://hub.docker.com/r/dyonr/jackettvpn</Registry>
@@ -14,7 +14,7 @@
   <WebUI>http://[IP]:[PORT:9117]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/DyonR/docker-templates/master/Templates/jackettvpn/jackettvpn-template.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/DyonR/docker-templates/master/Icons/jackettvpn/jackettvpn-icon.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <DateInstalled>1535223356</DateInstalled>
   <DonateText/>
@@ -83,6 +83,11 @@
       <Name>UMASK</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>one.one.one.one</Value>
+      <Name>HEALTH_CHECK_HOST</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="WEBUI_PORT" Target="9117" Default="9117" Mode="tcp" Description="Container Port: 9117" Type="Port" Display="always" Required="true" Mask="false">9117</Config>
@@ -95,5 +100,6 @@
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">002</Config>
+  <Config Name="HEALTH_CHECK_HOST" Target="HEALTH_CHECK_HOST" Default="one.one.one.one" Mode="" Description="Container Variable: HEALTH_CHECK_HOST" Type="Variable" Display="advanced" Required="false" Mask="false">one.one.one.one</Config>
   <Config Name="config" Target="/config" Default="/mnt/user/appdata/jackettvpn" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/jackettvpn/</Config>
 </Container>
