@@ -6,6 +6,7 @@
   <Registry>https://hub.docker.com/r/dyonr/jackettvpn</Registry>
   <Network>bridge</Network>
   <MyIP/>
+  <Shell>bash</Shell>
   <Privileged>true</Privileged>
   <Support>https://lime-technology.com/forums/topic/73693-support-jackettvpn/</Support>
   <Project>https://github.com/Jackett/Jackett</Project>
@@ -93,6 +94,11 @@
       <Name>DISABLE_IPV6</Name>
       <Mode/>
     </Variable>
+	<Variable>
+      <Value></Value>
+      <Name>ADDITIONAL_PORTS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="WEBUI_PORT" Target="9117" Default="9117" Mode="tcp" Description="Container Port: 9117" Type="Port" Display="always" Required="true" Mask="false">9117</Config>
@@ -107,5 +113,6 @@
   <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">002</Config>
   <Config Name="HEALTH_CHECK_HOST" Target="HEALTH_CHECK_HOST" Default="one.one.one.one" Mode="" Description="Container Variable: HEALTH_CHECK_HOST" Type="Variable" Display="advanced" Required="false" Mask="false">one.one.one.one</Config>
   <Config Name="DISABLE_IPV6" Target="DISABLE_IPV6" Default="1" Mode="" Description="Container Variable: DISABLE_IPV6" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
+  <Config Name="ADDITIONAL_PORTS" Target="ADDITIONAL_PORTS" Default="" Mode="" Description="Container Variable: ADDITIONAL_PORTS" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="config" Target="/config" Default="/mnt/user/appdata/jackettvpn" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/jackettvpn/</Config>
 </Container>
