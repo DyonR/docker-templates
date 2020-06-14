@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<Container version="6">
-  <Date>2020-06-03</Date>
+<Container version="7">
+  <Date>2020-06-14</Date>
   <Name>jackettvpn</Name>
   <Repository>dyonr/jackettvpn</Repository>
   <Registry>https://hub.docker.com/r/dyonr/jackettvpn</Registry>
@@ -88,6 +88,11 @@
       <Name>HEALTH_CHECK_HOST</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>DISABLE_IPV6</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="WEBUI_PORT" Target="9117" Default="9117" Mode="tcp" Description="Container Port: 9117" Type="Port" Display="always" Required="true" Mask="false">9117</Config>
@@ -101,5 +106,6 @@
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
   <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false">002</Config>
   <Config Name="HEALTH_CHECK_HOST" Target="HEALTH_CHECK_HOST" Default="one.one.one.one" Mode="" Description="Container Variable: HEALTH_CHECK_HOST" Type="Variable" Display="advanced" Required="false" Mask="false">one.one.one.one</Config>
+  <Config Name="DISABLE_IPV6" Target="DISABLE_IPV6" Default="1" Mode="" Description="Container Variable: DISABLE_IPV6" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
   <Config Name="config" Target="/config" Default="/mnt/user/appdata/jackettvpn" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/jackettvpn/</Config>
 </Container>
