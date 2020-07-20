@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
-<Container version="7">
+<Container version="1">
   <Date>2020-07-20</Date>
   <Name>magnetico-environment</Name>
   <Repository>dyonr/magnetico-environment</Repository>
   <Registry>https://hub.docker.com/r/dyonr/magnetico-environment</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/94901-support-magnetico-environment/</Support>
@@ -19,23 +18,15 @@
   <PostArgs/>
   <DateInstalled>1595207388</DateInstalled>
   <Description>This Docker runs a basic magnetico environment, magneticow, the webserver and magneticod, the DHT Crawler. More info about magnetico: https://github.com/boramalper/magnetico</Description>
-  <Networking>
-    <Mode>bridge</Mode>
-  </Networking>
-  <Data>
-  </Data>
   <Config Name="MAGNETICOW_USERNAME" Target="MAGNETICOW_USERNAME" Default="magneticow" Mode="" Description="Username used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="false">magneticow</Config>
   <Config Name="MAGNETICOW_PASSWORD" Target="MAGNETICOW_PASSWORD" Default="magneticow" Mode="" Description="Password used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="true">magneticow</Config>
   <Config Name="MAGNETICOW_PORT" Target="8080" Default="8080" Mode="tcp" Description="Port that magneticow gets hosted on" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
-
   <Config Name="MAGNETICOD_NEIGHBORS" Target="MAGNETICOD_NEIGHBORS" Default="1000" Mode="" Description="The maximum numbers of neighbors of an indexer" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="MAGNETICOD_LEECHES" Target="MAGNETICOD_LEECHES" Default="50" Mode="" Description="The maximum numbers of leeches" Type="Variable" Display="always" Required="false" Mask="false">50</Config>
-  
   <Config Name="MAGNETICOW_ADDRESS" Target="MAGNETICOW_ADDRESS" Default="0.0.0.0" Mode="" Description="Host address of magneticow" Type="Variable" Display="advanced" Required="false" Mask="false">0.0.0.0</Config>
   <Config Name="MAGNETICOD_ADDRESS" Target="MAGNETICOD_ADDRESS" Default="0.0.0.0" Mode="" Description="IP-address used by magneticod for indexing on the DHT network" Type="Variable" Display="advanced" Required="false" Mask="false">0.0.0.0</Config>
   <Config Name="MAGNETICOD_PORT" Target="MAGNETICOD_PORT" Default="0" Mode="" Description="Port used by magneticod for indexing on the DHT network" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
   <Config Name="MAGNETICOW_VERBOSE" Target="MAGNETICOW_VERBOSE" Default="" Mode="" Description="Container Variable: MAGNETICOW_VERBOSE" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="MAGNETICOD_VERBOSE" Target="MAGNETICOD_VERBOSE" Default="" Mode="" Description="Container Variable: MAGNETICOD_VERBOSE" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
-  
-  <Config Name="database" Target="/root/.local/share/magneticod" Default="/mnt/user/appdata/magnetico" Mode="rw" Description="The path where magneticod will store its database" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/magnetico</Config>
+  <Config Name="Database Location" Target="/root/.local/share/magneticod" Default="/mnt/user/appdata/magnetico" Mode="rw" Description="The path where magneticod will store its database" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/magnetico</Config>
 </Container>
