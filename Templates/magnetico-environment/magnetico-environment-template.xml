@@ -110,5 +110,5 @@
   <Config Name="MAGNETICOW_VERBOSE" Target="MAGNETICOW_VERBOSE" Default="" Mode="" Description="Container Variable: MAGNETICOW_VERBOSE" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="MAGNETICOD_VERBOSE" Target="MAGNETICOD_VERBOSE" Default="" Mode="" Description="Container Variable: MAGNETICOD_VERBOSE" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
   
-  <Config Name="database" Target="/root/.local/share/magneticod" Default="/mnt/user/appdata/magnetico" Mode="rw" Description="The path where magneticod will store its database" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/jackettvpn</Config>
+  <Config Name="database" Target="/root/.local/share/magneticod" Default="/mnt/user/appdata/magnetico" Mode="rw" Description="The path where magneticod will store its database" Type="Path" Display="" Required="true" Mask="false">/mnt/user/appdata/jackettvpn</Config>
 </Container>
