@@ -18,88 +18,15 @@
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <DateInstalled>1595207388</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
   <Description>This Docker runs a basic magnetico environment, magneticow, the webserver and magneticod, the DHT Crawler. More info about magnetico: https://github.com/boramalper/magnetico</Description>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>8080</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
   </Networking>
   <Data>
-    <Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/root/.local/share/magneticod</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
-  <Environment>
-    <Variable>
-      <Value>magneticow</Value>
-      <Name>MAGNETICOW_USERNAME</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>magneticow</Value>
-      <Name>MAGNETICOW_PASSWORD</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>0.0.0.0</Value>
-      <Name>MAGNETICOW_ADDRESS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>8080</Value>
-      <Name>MAGNETICOW_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value></Value>
-      <Name>MAGNETICOW_VERBOSE</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>0.0.0.0</Value>
-      <Name>MAGNETICOD_ADDRESS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>0</Value>
-      <Name>MAGNETICOD_PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>1</Value>
-      <Name>MAGNETICOD_INTERVAL</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>1000</Value>
-      <Name>MAGNETICOD_NEIGHBORS</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>50</Value>
-      <Name>MAGNETICOD_LEECHES</Name>
-      <Mode/>
-    </Variable>
-	<Variable>
-      <Value></Value>
-      <Name>MAGNETICOD_VERBOSE</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
-  <Labels/>
-  
   <Config Name="MAGNETICOW_USERNAME" Target="MAGNETICOW_USERNAME" Default="magneticow" Mode="" Description="Username used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="false">magneticow</Config>
   <Config Name="MAGNETICOW_PASSWORD" Target="MAGNETICOW_PASSWORD" Default="magneticow" Mode="" Description="Password used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="true">magneticow</Config>
-  <Config Name="MAGNETICOW_PORT" Target="8080" Default="8080" Mode="tcp" Description="Port that magneticow gets hosted on" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="MAGNETICOW_PORT" Target="8080" Default="8080" Mode="tcp" Description="Port that magneticow gets hosted on" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
 
   <Config Name="MAGNETICOD_NEIGHBORS" Target="MAGNETICOD_NEIGHBORS" Default="1000" Mode="" Description="The maximum numbers of neighbors of an indexer" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="MAGNETICOD_LEECHES" Target="MAGNETICOD_LEECHES" Default="50" Mode="" Description="The maximum numbers of leeches" Type="Variable" Display="always" Required="false" Mask="false">50</Config>
@@ -110,5 +37,5 @@
   <Config Name="MAGNETICOW_VERBOSE" Target="MAGNETICOW_VERBOSE" Default="" Mode="" Description="Container Variable: MAGNETICOW_VERBOSE" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="MAGNETICOD_VERBOSE" Target="MAGNETICOD_VERBOSE" Default="" Mode="" Description="Container Variable: MAGNETICOD_VERBOSE" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
   
-  <Config Name="database" Target="/root/.local/share/magneticod" Default="/mnt/user/appdata/magnetico" Mode="rw" Description="The path where magneticod will store its database" Type="Path" Display="" Required="true" Mask="false">/mnt/user/appdata/magnetico</Config>
+  <Config Name="database" Target="/root/.local/share/magneticod" Default="/mnt/user/appdata/magnetico" Mode="rw" Description="The path where magneticod will store its database" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/magnetico</Config>
 </Container>
