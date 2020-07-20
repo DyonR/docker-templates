@@ -8,7 +8,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support></Support>
+  <Support>https://forums.unraid.net/topic/94901-support-magnetico-environment/</Support>
   <Project>https://github.com/boramalper/magnetico</Project>
   <Overview>magnetico is an autonomous (self-hosted) BitTorrent DHT search engine suite.</Overview>
   <Category>Downloaders: Tools:</Category>
