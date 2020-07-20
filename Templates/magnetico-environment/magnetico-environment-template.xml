@@ -14,8 +14,6 @@
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/DyonR/docker-templates/master/Templates/magnetico-environment/magnetico-environment-template.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/DyonR/docker-templates/master/Icons/magnetico-environment/magnetico-environment-icon.png</Icon>
-  <ExtraParams>--restart unless-stopped</ExtraParams>
-  <PostArgs/>
   <DateInstalled>1595207388</DateInstalled>
   <Description>This Docker runs a basic magnetico environment, magneticow, the webserver and magneticod, the DHT Crawler. More info about magnetico: https://github.com/boramalper/magnetico</Description>
   <Config Name="MAGNETICOW_USERNAME" Target="MAGNETICOW_USERNAME" Default="magneticow" Mode="" Description="Username used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="false">magneticow</Config>
