@@ -9,13 +9,13 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/94901-support-magnetico-environment/</Support>
   <Project>https://github.com/boramalper/magnetico</Project>
-  <Overview>magnetico is an autonomous (self-hosted) BitTorrent DHT search engine suite.</Overview>
+  <Overview>magnetico is an autonomous (self-hosted) BitTorrent DHT indexer / crawler / search engine suite.</Overview>
   <Category>Downloaders: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/DyonR/docker-templates/master/Templates/magnetico-environment/magnetico-environment-template.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/DyonR/docker-templates/master/Icons/magnetico-environment/magnetico-environment-icon.png</Icon>
   <DateInstalled>1595207388</DateInstalled>
-  <Description>This Docker runs a basic magnetico environment, magneticow, the webserver and magneticod, the DHT Crawler. More info about magnetico: https://github.com/boramalper/magnetico</Description>
+  <Description>This Docker runs a basic magnetico environment, magneticow, the webserver and magneticod, the DHT crawler/DHT indexer. More info about magnetico: https://github.com/boramalper/magnetico</Description>
   <Config Name="MAGNETICOW_USERNAME" Target="MAGNETICOW_USERNAME" Default="magneticow" Mode="" Description="Username used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="false">magneticow</Config>
   <Config Name="MAGNETICOW_PASSWORD" Target="MAGNETICOW_PASSWORD" Default="magneticow" Mode="" Description="Password used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="true">magneticow</Config>
   <Config Name="MAGNETICOW_PORT" Target="8080" Default="8080" Mode="tcp" Description="Port that magneticow gets hosted on" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
