@@ -25,6 +25,7 @@
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID that will be set on the magneticod database folder" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
   <Config Name="MAGNETICOW_ADDRESS" Target="MAGNETICOW_ADDRESS" Default="0.0.0.0" Mode="" Description="Host address of magneticow" Type="Variable" Display="advanced" Required="false" Mask="false">0.0.0.0</Config>
   <Config Name="MAGNETICOD_ADDRESS" Target="MAGNETICOD_ADDRESS" Default="0.0.0.0" Mode="" Description="IP-address used by magneticod for indexing on the DHT network" Type="Variable" Display="advanced" Required="false" Mask="false">0.0.0.0</Config>
+  <Config Name="MAGNETICOD_INTERVAL" Target="MAGNETICOD_INTERVAL" Default="`1" Mode="" Description="The indexing interval used by magneticod in seconds" Type="Variable" Display="advanced" Required="false" Mask="false">1</Config>
   <Config Name="MAGNETICOD_PORT" Target="MAGNETICOD_PORT" Default="0" Mode="" Description="Port used by magneticod for indexing on the DHT network" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
   <Config Name="MAGNETICOW_VERBOSE" Target="MAGNETICOW_VERBOSE" Default="" Mode="" Description="Container Variable: MAGNETICOW_VERBOSE" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="MAGNETICOD_VERBOSE" Target="MAGNETICOD_VERBOSE" Default="" Mode="" Description="Container Variable: MAGNETICOD_VERBOSE" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
