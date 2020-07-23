@@ -21,6 +21,8 @@
   <Config Name="MAGNETICOW_PORT" Target="8080" Default="8080" Mode="tcp" Description="Port that magneticow gets hosted on" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
   <Config Name="MAGNETICOD_NEIGHBORS" Target="MAGNETICOD_NEIGHBORS" Default="1000" Mode="" Description="The maximum numbers of neighbors of an indexer" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="MAGNETICOD_LEECHES" Target="MAGNETICOD_LEECHES" Default="50" Mode="" Description="The maximum numbers of leeches" Type="Variable" Display="always" Required="false" Mask="false">50</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID that will be set on the magneticod database folder" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID that will be set on the magneticod database folder" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
   <Config Name="MAGNETICOW_ADDRESS" Target="MAGNETICOW_ADDRESS" Default="0.0.0.0" Mode="" Description="Host address of magneticow" Type="Variable" Display="advanced" Required="false" Mask="false">0.0.0.0</Config>
   <Config Name="MAGNETICOD_ADDRESS" Target="MAGNETICOD_ADDRESS" Default="0.0.0.0" Mode="" Description="IP-address used by magneticod for indexing on the DHT network" Type="Variable" Display="advanced" Required="false" Mask="false">0.0.0.0</Config>
   <Config Name="MAGNETICOD_PORT" Target="MAGNETICOD_PORT" Default="0" Mode="" Description="Port used by magneticod for indexing on the DHT network" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
