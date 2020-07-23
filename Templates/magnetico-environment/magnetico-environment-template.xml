@@ -16,8 +16,8 @@
   <Icon>https://raw.githubusercontent.com/DyonR/docker-templates/master/Icons/magnetico-environment/magnetico-environment-icon.png</Icon>
   <DateInstalled>1595207388</DateInstalled>
   <Description>This Docker runs a basic magnetico environment, magneticow, the webserver and magneticod, the DHT crawler/DHT indexer. More info about magnetico: https://github.com/boramalper/magnetico</Description>
-  <Config Name="MAGNETICOW_USERNAME" Target="MAGNETICOW_USERNAME" Default="magneticow" Mode="" Description="Username used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="false">magneticow</Config>
-  <Config Name="MAGNETICOW_PASSWORD" Target="MAGNETICOW_PASSWORD" Default="magneticow" Mode="" Description="Password used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="true">magneticow</Config>
+  <Config Name="MAGNETICOW_USERNAME" Target="MAGNETICOW_USERNAME" Default="magnetico" Mode="" Description="Username used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="false">magnetico</Config>
+  <Config Name="MAGNETICOW_PASSWORD" Target="MAGNETICOW_PASSWORD" Default="magnetico" Mode="" Description="Password used to access the magneticow web interface" Type="Variable" Display="always" Required="false" Mask="true">magnetico</Config>
   <Config Name="MAGNETICOW_PORT_MAPPING" Target="8080" Default="8556" Mode="tcp" Description="The port that you will access magneticow on" Type="Port" Display="always" Required="false" Mask="false">8556</Config>
   <Config Name="MAGNETICOD_NEIGHBORS" Target="MAGNETICOD_NEIGHBORS" Default="1000" Mode="" Description="The maximum numbers of neighbors of an indexer" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="MAGNETICOD_LEECHES" Target="MAGNETICOD_LEECHES" Default="50" Mode="" Description="The maximum numbers of leeches" Type="Variable" Display="always" Required="false" Mask="false">50</Config>
