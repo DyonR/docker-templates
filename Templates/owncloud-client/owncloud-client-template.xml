@@ -7,7 +7,7 @@
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/DyonR/docker-owncloud-client/issues</Support>
+  <Support>https://forums.unraid.net/topic/95194-support-dyonr-owncloud-client/</Support>
   <Project>https://github.com/owncloud/client</Project>
   <Overview>Dockerized ownCloud CLI Client (owncloudcmd) to sync from any supported ownCloud-like enviroment.</Overview>
   <Category>Backup: Cloud: Network:Other</Category>
