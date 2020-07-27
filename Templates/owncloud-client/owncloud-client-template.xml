@@ -13,6 +13,7 @@
   <Category>Backup: Cloud: Network:Other</Category>
   <TemplateURL>https://raw.githubusercontent.com/DyonR/docker-templates/master/Templates/owncloud-client/owncloud-client-template.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/DyonR/docker-templates/master/Icons/owncloud-client/owncloud-client-icon.jpg</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <DateInstalled>1595812356</DateInstalled>
   <Description>This container should work with ownCloud, NextCloud, TransIP STACK and any other ownCloud/NextCloud based storage endpoints.</Description>
   <Config Name="OC_USER" Target="OC_USER" Default="" Mode="" Description="Username to connect to ownCloud" Type="Variable" Display="always" Required="true" Mask="false"></Config>
