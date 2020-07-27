@@ -8,7 +8,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
-  <Support>https://lime-technology.com/forums/topic/73693-support-jackettvpn/</Support>
+  <Support>https://forums.unraid.net/topic/73693-support-dyonr-jackettvpn/</Support>
   <Project>https://github.com/Jackett/Jackett</Project>
   <Overview>Docker container which runs the latest headless Jackett Server while connecting to OpenVPN with iptables killswitch to prevent IP leakage when the tunnel goes down.</Overview>
   <Category>Downloaders: Tools:</Category>
