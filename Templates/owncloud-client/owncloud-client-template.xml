@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/95194-support-dyonr-owncloud-client/</Support>
   <Project>https://github.com/owncloud/client</Project>
-  <Overview>Dockerized ownCloud CLI Client (owncloudcmd) to sync from any supported ownCloud-like enviroment.</Overview>
+  <Overview>Dockerized ownCloud CLI Client (owncloudcmd) to sync from any supported ownCloud-like (e.g. STACK, NextCloud) enviroment. </Overview>
   <Category>Backup: Cloud: Network:Other</Category>
   <TemplateURL>https://raw.githubusercontent.com/DyonR/docker-templates/master/Templates/owncloud-client/owncloud-client-template.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/DyonR/docker-templates/master/Icons/owncloud-client/owncloud-client-icon.jpg</Icon>
