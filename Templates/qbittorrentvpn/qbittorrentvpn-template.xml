@@ -18,9 +18,9 @@
   <DateInstalled>1597536963</DateInstalled>
   <Description>Docker container which runs the latest qBittorrent-nox client while connecting to WireGuard (experimental) or OpenVPN with iptables killswitch to prevent IP leakage when the tunnel goes down.</Description>
   <Config Name="VPN_ENABLED" Target="VPN_ENABLED" Default="yes" Mode="" Description="Enable VPN? yes/no" Type="Variable" Display="always" Required="false" Mask="false">yes</Config>
-  <Config Name="VPN_TYPE" Target="VPN_TYPE" Default="openvpn" Mode="" Description="openvpn / wireguard? WireGuard is experimental" Type="Variable" Display="always" Required="true" Mask="false">openvpn</Config>
-  <Config Name="VPN_USERNAME" Target="VPN_USERNAME" Default="" Mode="" Description="Username used to authenticate to the VPN" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-  <Config Name="VPN_PASSWORD" Target="VPN_PASSWORD" Default="" Mode="" Description="Password used to authenticate to the VPN" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="VPN_TYPE" Target="VPN_TYPE" Default="openvpn" Mode="" Description="openvpn / wireguard?" Type="Variable" Display="always" Required="true" Mask="false">openvpn</Config>
+  <Config Name="VPN_USERNAME" Target="VPN_USERNAME" Default="" Mode="" Description="Username used to authenticate to the VPN (OpenVPN only)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="VPN_PASSWORD" Target="VPN_PASSWORD" Default="" Mode="" Description="Password used to authenticate to the VPN (OpenVPN only)" Type="Variable" Display="always" Required="false" Mask="true"></Config>
   <Config Name="LAN_NETWORK" Target="LAN_NETWORK" Default="192.168.0.0/24" Mode="" Description="Your local network address in CIDR notation" Type="Variable" Display="always" Required="true" Mask="false">192.168.0.0/24</Config>
   <Config Name="Downloads Path" Target="/downloads" Default="" Mode="rw" Description="Path for /downloads" Type="Path" Display="always" Required="true" Mask="false"></Config>
   <Config Name="WEBUI_PORT" Target="8080" Default="8080" Mode="tcp" Description="Port used to access qBittorrent remotely" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
