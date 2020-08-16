@@ -7,7 +7,7 @@
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
-  <Support>https://github.com/dyonr/docker-qbittorrentvpn/issues</Support>
+  <Support>https://forums.unraid.net/topic/95850-support-dyonr-qbittorrentvpn/</Support>
   <Project>https://github.com/qBittorrent/qBittorrent</Project>
   <Overview>Docker container which runs the latest qBittorrent-nox client while connecting to WireGuard (experimental) or OpenVPN with iptables killswitch to prevent IP leakage when the tunnel goes down.</Overview>
   <Category>Downloaders:</Category>
