@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<Container version="10">
-  <Date>2020-08-16</Date>
+<Container version="11">
+  <Date>2020-08-18</Date>
   <Name>qbittorrentvpn</Name>
   <Repository>dyonr/qbittorrentvpn</Repository>
   <Registry>https://hub.docker.com/r/dyonr/qbittorrentvpn</Registry>
@@ -11,7 +11,7 @@
   <Project>https://github.com/qBittorrent/qBittorrent</Project>
   <Overview>Docker container which runs the latest qBittorrent-nox client while connecting to WireGuard (experimental) or OpenVPN with iptables killswitch to prevent IP leakage when the tunnel goes down.</Overview>
   <Category>Downloaders:</Category>
-  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <WebUI>https://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/DyonR/docker-templates/master/Templates/qbittorrentvpn/qbittorrentvpn-template.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/DyonR/docker-templates/master/Icons/qbittorrentvpn/qbittorrent-icon-256.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
@@ -26,6 +26,7 @@
   <Config Name="WEBUI_PORT" Target="8080" Default="8080" Mode="tcp" Description="Port used to access qBittorrent remotely" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="The UID applied to the /config and /downloads" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="The GID applied to the /config and /downloads" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="ENABLE_SSL" Target="ENABLE_SSL" Default="yes" Mode="" Description="Let the container handle SSL (yes/no)?" Type="Variable" Display="advanced" Required="false" Mask="false">yes</Config>
   <Config Name="NAME_SERVERS" Target="NAME_SERVERS" Default="1.1.1.1,1.0.0.1" Mode="" Description="DNS used by the container" Type="Variable" Display="advanced" Required="false" Mask="false">1.1.1.1,1.0.0.1</Config>
   <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="umask used by the container" Type="Variable" Display="advanced" Required="false" Mask="false">002</Config>
   <Config Name="HEALTH_CHECK_HOST" Target="HEALTH_CHECK_HOST" Default="one.one.one.one" Mode="" Description="Host used to check if connection is up" Type="Variable" Display="advanced" Required="false" Mask="false">one.one.one.one</Config>
