@@ -7,7 +7,7 @@
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
-  <Support>https://github.com/DyonR/docker-sabnzbdvpn/issues</Support>
+  <Support>https://forums.unraid.net/topic/95998-support-dyonr-sabnzbdvpn/</Support>
   <Project>https://github.com/sabnzbd/sabnzbd</Project>
   <Overview>Docker container which runs the SABnzbd while connecting to WireGuard or OpenVPN with iptables killswitch to prevent IP leakage when the tunnel goes down.</Overview>
   <Category>Downloaders:</Category>
