@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="1">
+<Container version="2">
   <Date>2021-01-26</Date>
   <Name>nzbgetvpn</Name>
   <Repository>dyonr/nzbgetvpn</Repository>
@@ -7,7 +7,7 @@
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
-  <Support>https://forums.unraid.net/topic/95998-support-dyonr-sabnzbdvpn/</Support>
+  <Support>https://forums.unraid.net/topic/101870-support-dyonr-nzbgetvpn/</Support>
   <Project>https://github.com/nzbget/nzbget</Project>
   <Overview>Docker container which runs the NZBGet while connecting to WireGuard or OpenVPN with iptables killswitch to prevent IP leakage when the tunnel goes down.</Overview>
   <Category>Downloaders:</Category>
