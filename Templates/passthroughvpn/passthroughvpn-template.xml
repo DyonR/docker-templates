@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="1">
+<Container version="2">
   <Date>2021-02-19</Date>
   <Name>passthroughvpn</Name>
   <Repository>dyonr/passthroughvpn</Repository>
@@ -7,7 +7,7 @@
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
-  <Support></Support>
+  <Support>https://forums.unraid.net/topic/102916-support-dyonr-passthroughvpn/</Support>
   <Project>https://github.com/DyonR/docker-passthroughvpn</Project>
   <Overview>This container solves the problem of containers with no 'VPN' variant. After setting up this container, route your non-VPN Dockers through this one to protect your IP.&#xD;
 Or host, for example a game or webserver by using your VPN Provider's IP, if your VPN Provider supports forwarding.&#xD;
