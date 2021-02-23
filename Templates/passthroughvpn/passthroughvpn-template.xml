@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="2">
+<Container version="3">
   <Date>2021-02-19</Date>
   <Name>passthroughvpn</Name>
   <Repository>dyonr/passthroughvpn</Repository>
@@ -12,7 +12,8 @@
   <Overview>This container solves the problem of containers with no 'VPN' variant. After setting up this container, route your non-VPN Dockers through this one to protect your IP.&#xD;
 Or host, for example a game or webserver by using your VPN Provider's IP, if your VPN Provider supports forwarding.&#xD;
 Both WireGuard and OpenVPN are supported.&#xD;
-Check out https://github.com/DyonR/docker-passthroughvpn for setup instructions.</Overview>
+Check out https://github.com/DyonR/docker-passthroughvpn for more information and setup instructions.&#xD;
+ANY CONTAINER THAT GETS ROUTED THROUGH THIS CONTAINER WILL (BRIEFLY) USE YOUR REAL IP. THIS IS BECAUSE THE PASSTHROUGHVPN CONTAINER NEEDS TO ESTABLISH A CONNECTION WITH THE VPN FIRST. TILL THE VPN CONNECTION IS ESTABLISHED, IT WILL USE YOUR REAL IP.</Overview>
   <Category>Tools: Network:VPN</Category>
   <TemplateURL>https://raw.githubusercontent.com/DyonR/docker-templates/master/Templates/passthroughvpn/passthroughvpn-template.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/DyonR/docker-templates/master/Icons/passthroughvpn/passthroughvpn-icon-256.png</Icon>
@@ -21,7 +22,8 @@ Check out https://github.com/DyonR/docker-passthroughvpn for setup instructions.
   <Description>This container solves the problem of containers with no 'VPN' variant. After setting up this container, route your non-VPN Dockers through this one to protect your IP.&#xD;
 Or host, for example a game or webserver by using your VPN Provider's IP, if your VPN Provider supports forwarding.&#xD;
 Both WireGuard and OpenVPN are supported.&#xD;
-Check out https://github.com/DyonR/docker-passthroughvpn for setup instructions.</Description>
+Check out https://github.com/DyonR/docker-passthroughvpn for more information and setup instructions.&#xD;
+ANY CONTAINER THAT GETS ROUTED THROUGH THIS CONTAINER WILL (BRIEFLY) USE YOUR REAL IP. THIS IS BECAUSE THE PASSTHROUGHVPN CONTAINER NEEDS TO ESTABLISH A CONNECTION WITH THE VPN FIRST. TILL THE VPN CONNECTION IS ESTABLISHED, IT WILL USE YOUR REAL IP.</Description>
   <Config Name="VPN_ENABLED" Target="VPN_ENABLED" Default="yes" Mode="" Description="Enable VPN? yes/no" Type="Variable" Display="always" Required="false" Mask="false">yes</Config>
   <Config Name="VPN_TYPE" Target="VPN_TYPE" Default="openvpn" Mode="" Description="openvpn / wireguard?" Type="Variable" Display="always" Required="true" Mask="false">openvpn</Config>
   <Config Name="VPN_USERNAME" Target="VPN_USERNAME" Default="" Mode="" Description="Username used to authenticate to the VPN (OpenVPN only)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
