@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="12">
+<Container version="13">
   <Date>2020-08-18</Date>
   <Name>qbittorrentvpn</Name>
   <Repository>dyonr/qbittorrentvpn</Repository>
@@ -9,7 +9,7 @@
   <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/95850-support-dyonr-qbittorrentvpn/</Support>
   <Project>https://github.com/qBittorrent/qBittorrent</Project>
-  <Overview>Docker container which runs the latest qBittorrent-nox client while connecting to WireGuard (experimental) or OpenVPN with iptables killswitch to prevent IP leakage when the tunnel goes down.</Overview>
+  <Overview>Docker container which runs the latest qBittorrent-nox client while connecting to WireGuard or OpenVPN with iptables killswitch to prevent IP leakage when the tunnel goes down.</Overview>
   <Category>Downloaders:</Category>
   <WebUI>https://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/DyonR/docker-templates/master/Templates/qbittorrentvpn/qbittorrentvpn-template.xml</TemplateURL>
