@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
-<Container version="4">
-  <Date>2021-05-17</Date>
+<Container version="5">
+  <Date>2023-04-03</Date>
   <Name>nzbgetvpn</Name>
   <Repository>dyonr/nzbgetvpn</Repository>
   <Registry>https://hub.docker.com/r/dyonr/nzbgetvpn</Registry>
+  <Deprecated>true</Deprecated>
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
