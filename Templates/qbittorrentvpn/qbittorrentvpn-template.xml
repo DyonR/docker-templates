@@ -4,6 +4,7 @@
   <Name>qbittorrentvpn</Name>
   <Repository>dyonr/qbittorrentvpn</Repository>
   <Registry>https://hub.docker.com/r/dyonr/qbittorrentvpn</Registry>
+  <Deprecated>true</Deprecated>
   <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>true</Privileged>
